@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Cup View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="cupViewController" customModule="Hydration" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="KOV-si-pIM">
+                                <rect key="frame" x="92" y="84" width="191" height="499"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" id="8No-Um-Xdb">
+                                <rect key="frame" x="0.0" y="39" width="375" height="571"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" button="YES" image="YES"/>
+                                </accessibility>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <state key="normal" image="Webp.net-resizeimage (1)"/>
+                                <connections>
+                                    <action selector="waterBottleButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rhi-5o-bhq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="7a4-5v-NkH">
+                                <rect key="frame" x="231" y="21" width="128" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Adjust Water Level"/>
+                                <connections>
+                                    <action selector="adjustWaterLevelPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GxO-vQ-Pt9"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap To Sip!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="aFU-Q5-ini">
+                                <rect key="frame" x="57" y="260" width="261" height="59"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" red="0.92201511672865644" green="1" blue="0.0017117565483993902" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" id="2Yb-wH-FUo">
+                                <rect key="frame" x="0.0" y="608" width="375" height="59"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Water Remaining:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="bIQ-lM-uBs">
+                                        <rect key="frame" x="58" y="-3" width="259" height="62"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Full Bottle Size: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="jVH-LG-x2i">
+                                <rect key="frame" x="16" y="26" width="207" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <connections>
+                        <outlet property="adjustWaterLevelButton" destination="7a4-5v-NkH" id="Xm1-xc-ZbH"/>
+                        <outlet property="bottomBlock" destination="2Yb-wH-FUo" id="Wks-3g-lFU"/>
+                        <outlet property="fullBottleSizeLabel" destination="jVH-LG-x2i" id="JQf-lw-nze"/>
+                        <outlet property="tapToSipLabel" destination="aFU-Q5-ini" id="znm-cH-KZA"/>
+                        <outlet property="waterBottleButton" destination="8No-Um-Xdb" id="NB0-1O-HJJ"/>
+                        <outlet property="waterBox" destination="KOV-si-pIM" id="W9W-g6-2QW"/>
+                        <outlet property="waterRemainingLabel" destination="bIQ-lM-uBs" id="NKD-kX-b4W"/>
+                        <segue destination="0xx-T1-P2y" kind="modal" identifier="goToWaterLevelViewController" modalTransitionStyle="flipHorizontal" id="DEq-pP-lgt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="514.39999999999998" y="789.35532233883066"/>
+        </scene>
+        <!--Water Level View Controller-->
+        <scene sceneID="jR8-5r-2q9">
+            <objects>
+                <viewController id="0xx-T1-P2y" customClass="waterLevelViewController" customModule="Hydration" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XpR-s4-Ifu">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="xJm-4p-ijB">
+                                <rect key="frame" x="92" y="92" width="191" height="500"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" id="nR7-Hn-QjW">
+                                <rect key="frame" x="0.0" y="622" width="375" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="1" id="2W5-2r-hIT">
+                                        <rect key="frame" x="51" y="11" width="274" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <connections>
+                                            <action selector="waterLevelSliderUsed:" destination="0xx-T1-P2y" eventType="valueChanged" id="jPJ-lO-YGP"/>
+                                        </connections>
+                                    </slider>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="3Um-tY-JJi">
+                                <rect key="frame" x="16" y="19" width="34" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <action selector="backToBottleViewControllerButtonPressed:" destination="0xx-T1-P2y" eventType="touchUpInside" id="H2b-3h-Jcl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" id="LwI-rJ-8PF">
+                                <rect key="frame" x="0.0" y="42" width="375" height="580"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" button="YES" image="YES"/>
+                                </accessibility>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <state key="normal" image="Webp.net-resizeimage (1)"/>
+                                <connections>
+                                    <action selector="waterBottleButtonPressed:" destination="0xx-T1-P2y" eventType="touchUpInside" id="TVb-Ru-4cY"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap to Confirm!" lineBreakMode="clip" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Ftg-M9-0yl">
+                                <rect key="frame" x="87" y="261" width="200" height="120"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" red="0.92201511670000003" green="1" blue="0.001711756548" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Bee-Bf-lM6">
+                                <rect key="frame" x="141" y="19" width="218" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Adjust Total Water - For Ver. 2.0"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Slide to Adjust!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="vZS-Ue-rzy">
+                                <rect key="frame" x="130" y="601" width="115" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <connections>
+                        <outlet property="adjustTotalWaterButton" destination="Bee-Bf-lM6" id="jur-hj-tw2"/>
+                        <outlet property="backToBottleViewControllerButton" destination="3Um-tY-JJi" id="zc8-dM-i7O"/>
+                        <outlet property="bottomBox" destination="nR7-Hn-QjW" id="Ncc-xC-T2Y"/>
+                        <outlet property="slideToAdjustLabel" destination="vZS-Ue-rzy" id="fJl-1H-Pt6"/>
+                        <outlet property="tapToConfirmLabel" destination="Ftg-M9-0yl" id="JPW-UO-YJY"/>
+                        <outlet property="waterBottleButton" destination="LwI-rJ-8PF" id="bdu-9B-NHz"/>
+                        <outlet property="waterBox" destination="xJm-4p-ijB" id="f3y-QF-uey"/>
+                        <outlet property="waterLevelSlider" destination="2W5-2r-hIT" id="y8l-4t-lvF"/>
+                        <segue destination="BYZ-38-t0r" kind="modal" identifier="goToCupViewController" modalTransitionStyle="flipHorizontal" id="AZZ-1O-MxR"/>
+                        <segue destination="vj3-9N-LbX" kind="modal" identifier="goToTotalWaterViewController" modalPresentationStyle="fullScreen" id="jUr-pF-Abo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Eew-mP-gyj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1280.8" y="787.55622188905556"/>
+        </scene>
+        <!--Total Water View Controller-->
+        <scene sceneID="mep-8B-viQ">
+            <objects>
+                <viewController id="vj3-9N-LbX" customClass="totalWaterViewController" customModule="Hydration" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ewf-qu-EOs">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="c7c-4F-xGQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2019" y="789"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Webp.net-resizeimage (1)" width="303" height="580"/>
+    </resources>
+</document>
