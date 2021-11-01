@@ -1,6 +1,7 @@
 # HydrationiOS
 water bottle app for iPhone
 
+![Screen Shot 2021-10-31 at 9 18 03 PM](https://user-images.githubusercontent.com/77217507/139609000-b77422e7-bdbd-41c3-adea-f16abd84a7d9.png)
 
 Download the folder labeled Hydration and run the simulator with iPhone 8.
 
